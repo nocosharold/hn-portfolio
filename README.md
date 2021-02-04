@@ -7,11 +7,11 @@
   </a>
 </p>
 <h1 align="center">
-  <a href="https://haroldnocos.me/">
-    Created Portfolio using Gatsby <br/>
+    Created Portfolio using Gatsby
+</h1>
+<a href="https://haroldnocos.me/">
     <span>https://haroldnocos.me/</span>
 </a>
-</h1>
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
