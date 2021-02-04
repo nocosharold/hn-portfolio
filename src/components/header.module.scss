@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2:before {
+  content:"<";
+  color: #eee;
+}
+
+h2:after {
+  content:">";
+  color: #eee;
+}
+
+.navbar-logo {
+  color: #ff851b;
+}
+
+.Link {
+  color: #999999;
+  font-size: 1.125rem;
+  margin: auto 1rem auto auto;
+  padding: .5rem;
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+.Link:hover, 
+.Link:active {
+  color: #ff851b;
+  text-decoration: none;
+}
+
+
