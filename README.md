@@ -8,7 +8,7 @@
 </p>
 <h1 align="center">
     Portfolio Created using Gatsby <br/>
-    <a href="https://haroldnocos.me/">
+    <a href="https://haroldnocos.me/" target="_blank">
     <span>https://haroldnocos.me/</span>
 </a>
 </h1>
