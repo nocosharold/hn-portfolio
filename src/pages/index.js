@@ -184,8 +184,8 @@ const IndexPage = ({ data }) => {
                 <div className="d-flex justify-content-start flex-wrap mb-5">
                 <span className="mr-3">Mongo DB</span>
                 <span className="mr-3">Express JS</span>
-                <span className="mr-3">React Js</span>
-                <span className="mr-3">Node Js</span>
+                <span className="mr-3">React JS</span>
+                <span className="mr-3">Node JS</span>
                 <span className="mr-3">Redux</span>
                 </div>
               </Col>
@@ -213,7 +213,8 @@ const IndexPage = ({ data }) => {
                 <div className="d-flex justify-content-end flex-wrap mb-5">
                 <span className="ml-3">HTML</span>
                 <span className="ml-3">CSS</span>
-                <span className="ml-3">Bootstrap</span>
+                <span className="ml-3">JS</span>
+                <span className="ml-3">Bootstrap 4.5</span>
                 <span className="ml-3">Poke API</span>
                 </div>
               </Col>
@@ -240,7 +241,7 @@ const IndexPage = ({ data }) => {
                 </Container>
                 <div className="d-flex justify-content-start flex-wrap mb-5">
                 <span className="mr-3">HTML</span>
-                <span className="mr-3">CSSS</span>
+                <span className="mr-3">CSS</span>
                 <span className="mr-3">JavaScript</span>
                 <span className="mr-3">Bootstrap 4.5</span>
                 <span className="mr-3">Slick Slider Carousel</span>
@@ -264,15 +265,12 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-right">
-                  This project aims to create a landing page clone using HTML and CSS only. This challenge is to showcase a developer's knowledge to make the page responsive without using any frameworks.
+                  It is a challenging project to showcase a my knowledge to make the page responsive without using any frameworks.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-end flex-wrap mb-5">
-                <span className="ml-3">Mongo DB</span>
-                <span className="ml-3">Express JS</span>
-                <span className="ml-3">React Js</span>
-                <span className="ml-3">Node Js</span>
-                <span className="ml-3">Redux</span>
+                <span className="ml-3">HTML</span>
+                <span className="ml-3">CSS</span>
                 </div>
               </Col>
             </Col>
