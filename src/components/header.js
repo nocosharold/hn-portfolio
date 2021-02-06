@@ -6,7 +6,7 @@ import headerStyles from './header.module.scss'
 import '@fontsource/nunito-sans'
 import '@fontsource/vollkorn/700.css'
 
-import { Link } from 'gatsby'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
   return (
@@ -16,36 +16,41 @@ const Header = () => {
     >
       <Container className="bg-black p-0">
         <Navbar expand="lg" variant="dark" className="p-0 px-4">
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="#home">
             <h2 className={headerStyles.navbarLogo}>hn</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Link
-                className={headerStyles.Link}
-                to="/#"
-              >
-                Home
-              </Link>
-              <Link
-                className={headerStyles.Link}
-                to="/#about"
+                <AnchorLink
+                className={headerStyles.link}
+                  offset='100'
+                  href="#home"
+                >
+                  Home
+                </AnchorLink>
+              
+              <AnchorLink
+                className={headerStyles.link}
+                offset='100'
+                href="#about"
               >
                 About
-              </Link>
-              <Link
-                className={headerStyles.Link}
-                to="/#projects"
+              </AnchorLink>
+              <AnchorLink
+                className={headerStyles.link}
+                offset='100'
+                href="#projects"
               >
                 Projects
-              </Link>
-              <Link
-                className={headerStyles.Link}
-                to="/#contact"
+              </AnchorLink>
+              <AnchorLink
+                className={headerStyles.link}
+                offset='100'
+                href="#contact"
               >
                 Contact
-              </Link>
+              </AnchorLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

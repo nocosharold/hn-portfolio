@@ -10,6 +10,8 @@ import "@fontsource/vollkorn/700.css"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import {
   FaGithub,
   FaFacebook,
@@ -22,7 +24,7 @@ import {
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <Container fluid>
+      <Container fluid id="home">
         <Container>
           <Row className="pt-5 mt-5">
             <Col className=" col-12 col-lg-4">
@@ -313,24 +315,24 @@ const IndexPage = ({ data }) => {
                   <ul>
                     <strong className="mb-2">Useful Links</strong>
                     <li>
-                      <Link className="useful-links" to="/#">
+                      <AnchorLink className="useful-links" offset='100' href="#home">
                         Home
-                      </Link>
+                      </AnchorLink>
                     </li>
                     <li>
-                      <Link className="useful-links" to="/#about">
+                      <AnchorLink className="useful-links" offset='100' href="#about">
                         About
-                      </Link>
+                      </AnchorLink>
                     </li>
                     <li>
-                      <Link className="useful-links" to="/#projects">
+                      <AnchorLink className="useful-links" offset='100' href="#projects">
                         Projects
-                      </Link>
+                      </AnchorLink>
                     </li>
                     <li>
-                      <Link className="useful-links" to="/#contact">
+                      <AnchorLink className="useful-links" offset='100' href="#contact">
                         Contact
-                      </Link>
+                      </AnchorLink>
                     </li>
                   </ul>
                 </Container>

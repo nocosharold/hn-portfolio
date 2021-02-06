@@ -18,7 +18,13 @@ h2:after {
   color: #ff851b;
 }
 
-.Link {
+.link:active,
+.link:hover {
+  color: #ff851b !important;
+  text-decoration: none;
+}
+
+.link {
   color: #999999;
   font-size: 1.125rem;
   margin: auto 1rem auto auto;
@@ -26,11 +32,4 @@ h2:after {
   text-decoration: none;
   transition: color 1s ease;
 }
-
-.Link:hover, 
-.Link:active {
-  color: #ff851b;
-  text-decoration: none;
-}
-
 
