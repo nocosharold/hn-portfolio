@@ -267,7 +267,7 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-right">
-                  It is a challenging project to showcase a my knowledge to make the page responsive without using any frameworks.
+                  It is a great challenge to make the page responsive without using any frameworks.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-end flex-wrap mb-5">
