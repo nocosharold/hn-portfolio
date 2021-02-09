@@ -16,8 +16,14 @@ const Header = () => {
     >
       <Container className="bg-black p-0">
         <Navbar expand="lg" variant="dark" className="p-0 px-4">
-          <Navbar.Brand href="#home">
-            <h2 className={headerStyles.navbarLogo}>hn</h2>
+          <Navbar.Brand>
+            <AnchorLink
+                className={headerStyles.navbarLogoitem}
+                offset='100'
+                href="#home"
+              >
+              <h2 className={headerStyles.navbarLogo}>hn</h2>
+              </AnchorLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
