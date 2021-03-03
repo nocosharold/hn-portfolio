@@ -10,7 +10,7 @@ import "@fontsource/vollkorn/700.css"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import {
   FaGithub,
@@ -20,6 +20,8 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa"
+
+
 
 const IndexPage = ({ data }) => {
   return (
@@ -45,13 +47,13 @@ const IndexPage = ({ data }) => {
                   everyone's design perspective.
                 </p>
                 <Button
-                className="my-5"
-                variant="outline-warning"
-                href="https://my.indeed.com/p/haroldn-rf8089m"
-                target="_blank"
-              >
-                Download My Resume
-              </Button>{" "}
+                  className="my-5"
+                  variant="outline-warning"
+                  href="https://my.indeed.com/p/haroldn-rf8089m"
+                  target="_blank"
+                >
+                  Download My Resume
+                </Button>{" "}
               </Container>
             </Col>
           </Row>
@@ -180,15 +182,17 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-left">
-                  IKO is a great way to find the best vacation spots and resorts in the Philippines through shared vacation and lodging experiences.
+                    IKO is a great way to find the best vacation spots and
+                    resorts in the Philippines through shared vacation and
+                    lodging experiences.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-start flex-wrap mb-5">
-                <span className="mr-3">Mongo DB</span>
-                <span className="mr-3">Express JS</span>
-                <span className="mr-3">React JS</span>
-                <span className="mr-3">Node JS</span>
-                <span className="mr-3">Redux</span>
+                  <span className="mr-3">Mongo DB</span>
+                  <span className="mr-3">Express JS</span>
+                  <span className="mr-3">React JS</span>
+                  <span className="mr-3">Node JS</span>
+                  <span className="mr-3">Redux</span>
                 </div>
               </Col>
             </Col>
@@ -209,15 +213,18 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-right">
-                  Pokemon Lite is a web application that will let the user view all pokemon and its characteristics. There is also a feature that the pokemon catcher/user will have access to catch different types of pokemon.
+                    Pokemon Lite is a web application that will let the user
+                    view all pokemon and its characteristics. There is also a
+                    feature that the pokemon catcher/user will have access to
+                    catch different types of pokemon.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-end flex-wrap mb-5">
-                <span className="ml-3">HTML</span>
-                <span className="ml-3">CSS</span>
-                <span className="ml-3">JS</span>
-                <span className="ml-3">Bootstrap 4.5</span>
-                <span className="ml-3">Poke API</span>
+                  <span className="ml-3">HTML</span>
+                  <span className="ml-3">CSS</span>
+                  <span className="ml-3">JS</span>
+                  <span className="ml-3">Bootstrap 4.5</span>
+                  <span className="ml-3">Poke API</span>
                 </div>
               </Col>
             </Col>
@@ -238,15 +245,19 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-left">
-                  Solar System View is a website that will allow users to explore the planets and other celestial body in the solar system. Views of the Solar System gives everyone's exploration and educational enjoyment of the solar system and beyond.
+                    Solar System View is a website that will allow users to
+                    explore the planets and other celestial body in the solar
+                    system. Views of the Solar System gives everyone's
+                    exploration and educational enjoyment of the solar system
+                    and beyond.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-start flex-wrap mb-5">
-                <span className="mr-3">HTML</span>
-                <span className="mr-3">CSS</span>
-                <span className="mr-3">JavaScript</span>
-                <span className="mr-3">Bootstrap 4.5</span>
-                <span className="mr-3">Slick Slider Carousel</span>
+                  <span className="mr-3">HTML</span>
+                  <span className="mr-3">CSS</span>
+                  <span className="mr-3">JavaScript</span>
+                  <span className="mr-3">Bootstrap 4.5</span>
+                  <span className="mr-3">Slick Slider Carousel</span>
                 </div>
               </Col>
             </Col>
@@ -267,17 +278,17 @@ const IndexPage = ({ data }) => {
               <Col className="col-12">
                 <Container className="px-0">
                   <p className="text-right">
-                  It is a great challenge to make the page responsive without using any frameworks.
+                    It is a great challenge to make the page responsive without
+                    using any frameworks.
                   </p>
                 </Container>
                 <div className="d-flex justify-content-end flex-wrap mb-5">
-                <span className="ml-3">HTML</span>
-                <span className="ml-3">CSS</span>
+                  <span className="ml-3">HTML</span>
+                  <span className="ml-3">CSS</span>
                 </div>
               </Col>
             </Col>
           </Row>
-
         </Container>
       </Container>
 
@@ -286,7 +297,7 @@ const IndexPage = ({ data }) => {
           <Row className="py-5">
             <Col className="d-flex flex-column align-items-center">
               <h3 className="my-5">Contact Me</h3>
-              <h4 className="">Lets Code!</h4>
+              <h4 className="text-center">Lets Code!</h4>
               <p className="text-center w-50 mb-4">
                 I’m currently open for any great opportunity of discovering and
                 expanding my skills as a developer.
@@ -315,22 +326,38 @@ const IndexPage = ({ data }) => {
                   <ul>
                     <strong className="mb-2">Useful Links</strong>
                     <li>
-                      <AnchorLink className="useful-links" offset='100' href="#home">
+                      <AnchorLink
+                        className="useful-links"
+                        offset="100"
+                        href="#home"
+                      >
                         Home
                       </AnchorLink>
                     </li>
                     <li>
-                      <AnchorLink className="useful-links" offset='100' href="#about">
+                      <AnchorLink
+                        className="useful-links"
+                        offset="100"
+                        href="#about"
+                      >
                         About
                       </AnchorLink>
                     </li>
                     <li>
-                      <AnchorLink className="useful-links" offset='100' href="#projects">
+                      <AnchorLink
+                        className="useful-links"
+                        offset="100"
+                        href="#projects"
+                      >
                         Projects
                       </AnchorLink>
                     </li>
                     <li>
-                      <AnchorLink className="useful-links" offset='100' href="#contact">
+                      <AnchorLink
+                        className="useful-links"
+                        offset="100"
+                        href="#contact"
+                      >
                         Contact
                       </AnchorLink>
                     </li>
@@ -338,10 +365,6 @@ const IndexPage = ({ data }) => {
                 </Container>
               </Col>
               <Col>
-                <strong>Phone</strong>
-                <p>
-                  <FaPhone /> +63909 133 2057
-                </p>
                 <strong>Address</strong>
                 <p>
                   <FaMapMarkerAlt /> Sta. Ana, Pateros, Metro Manila
@@ -358,7 +381,10 @@ const IndexPage = ({ data }) => {
                     <Link to="https://github.com/nocosharold" target="_blank">
                       <FaGithub className="footer-links mr-3 mb-2" />
                     </Link>
-                    <Link to="https://www.linkedin.com/in/hnocos/" target="_blank">
+                    <Link
+                      to="https://www.linkedin.com/in/hnocos/"
+                      target="_blank"
+                    >
                       <FaLinkedin className="footer-links mr-3 mb-2" />
                     </Link>
                     <Link to="https://www.facebook.com/hnocos/" target="_blank">
@@ -482,8 +508,5 @@ export const data = graphql`
         }
       }
     }
-    
   }
 `
-
-
