@@ -144,6 +144,11 @@ li {
   border: 1px solid #eee;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: box-shadow 0.5s ease;
+}
+
+.project:hover {
+  box-shadow: 0 0 1rem rgba(238, 238, 238, 0.8);
 }
 
 .project-iko {
