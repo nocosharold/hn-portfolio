@@ -12,16 +12,21 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
-  }
+}
 
 h1,
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Vollkorn", serif;
   color: #eee;
   margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 3rem;
 }
 
@@ -31,13 +36,13 @@ h3 {
 }
 
 h3:after {
-	display: block;
-	height: 1px;
+  display: block;
+  height: 1px;
   background-color: #ff851b;
-	content: ""; 
-	width: 95px;
-	margin: 0 auto; 
-	margin-top: 6px;
+  content: "";
+  width: 95px;
+  margin: 0 auto;
+  margin-top: 6px;
 }
 
 h4 {
@@ -54,14 +59,13 @@ h6 {
   color: #ff851b;
 }
 
-
 h6:before {
-  content:"</";
+  content: "</";
   color: #eee;
 }
 
 h6:after {
-  content:">";
+  content: ">";
   color: #eee;
 }
 
@@ -107,7 +111,6 @@ img {
 .logo {
   object-fit: cover;
   width: 40px;
-  
 }
 
 li {
@@ -115,14 +118,14 @@ li {
   margin: 10px 0;
 }
 
-.footer-links, 
+.footer-links,
 .useful-links {
   text-decoration: none;
   color: #777;
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
-.footer-links:hover, 
+.footer-links:hover,
 .useful-links:hover {
   text-decoration: none;
   color: #eee;
@@ -139,12 +142,30 @@ li {
 
 .project {
   border: 1px solid #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.project-iko {
+  background-image: url(../img/ikoProj.png);
+}
+
+.project-pokeLite {
+  background-image: url(../img/pokeLiteProj.png);
+}
+
+.project-solarView {
+  background-image: url(../img/solarViewProj.png);
+}
+
+.project-directlyClone {
+  background-image: url(../img/directlyCloneProj.png);
+}
 #projects h4 {
-  color: #191919;
+  visibility: hidden;
 }
 
-
-
-
+.project-links {
+  font-size: 1.5rem;
+  color: #eee;
+}

@@ -12,16 +12,15 @@ import Img from "gatsby-image"
 
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
+import { VscLinkExternal } from "react-icons/vsc"
+
 import {
   FaGithub,
   FaFacebook,
   FaLinkedin,
-  FaPhone,
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa"
-
-
 
 const IndexPage = ({ data }) => {
   return (
@@ -169,13 +168,15 @@ const IndexPage = ({ data }) => {
 
           <Row className="d-flex flex-row-reverse my-5">
             <Col className="col-12 col-md-12 col-lg-6">
-              <Container className="project mb-5">
-                <h4>Project</h4>
-                <h4>Project</h4>
-                <h4>Project</h4>
-              </Container>
+              <Link to="https://iko-mern.herokuapp.com/" target="_blank">
+                <Container className="project project-iko mb-5">
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                </Container>
+              </Link>
             </Col>
-            <Col className="col-12 col-md-12 col-lg-6">
+            <Col className="col-12 col-md-12 col-lg-6 px-0">
               <Col className="project-title col-12 d-flex justify-content-start">
                 <h5>Iko Website</h5>
               </Col>
@@ -194,19 +195,35 @@ const IndexPage = ({ data }) => {
                   <span className="mr-3">Node JS</span>
                   <span className="mr-3">Redux</span>
                 </div>
+                <div className="d-flex justify-content-start flex-wrap">
+                  <Link to="https://iko-mern.herokuapp.com/" target="_blank">
+                    <VscLinkExternal className="project-links mr-3" />
+                  </Link>
+                  <Link
+                    to="https://github.com/chingu-voyages/vk1-bears-team-06.git"
+                    target="_blank"
+                  >
+                    <FaGithub className="project-links" />
+                  </Link>
+                </div>
               </Col>
             </Col>
           </Row>
 
           <Row className="my-5">
             <Col className="col-12 col-md-12 col-lg-6">
-              <Container className="project mb-5">
-                <h4>Project</h4>
-                <h4>Project</h4>
-                <h4>Project</h4>
-              </Container>
+              <Link
+                to="https://nocosharold.github.io/pokemon-lite-js/"
+                target="_blank"
+              >
+                <Container className="project project-pokeLite mb-5">
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                </Container>
+              </Link>
             </Col>
-            <Col className="col-12 col-md-12 col-lg-6">
+            <Col className="col-12 col-md-12 col-lg-6  px-0">
               <Col className="project-title col-12 d-flex justify-content-end text-right">
                 <h5>Pokemon Lite</h5>
               </Col>
@@ -226,19 +243,38 @@ const IndexPage = ({ data }) => {
                   <span className="ml-3">Bootstrap 4.5</span>
                   <span className="ml-3">Poke API</span>
                 </div>
+                <div className="d-flex justify-content-end flex-wrap">
+                  <Link
+                    to="https://nocosharold.github.io/pokemon-lite-js/"
+                    target="_blank"
+                  >
+                    <VscLinkExternal className="project-links" />
+                  </Link>
+                  <Link
+                    to="https://github.com/supremeking23/pokemon-lite-js"
+                    target="_blank"
+                  >
+                    <FaGithub className="project-links ml-3" />
+                  </Link>
+                </div>
               </Col>
             </Col>
           </Row>
 
           <Row className="d-flex flex-row-reverse my-5">
             <Col className="col-12 col-md-12 col-lg-6">
-              <Container className="project mb-5">
-                <h4>Project</h4>
-                <h4>Project</h4>
-                <h4>Project</h4>
-              </Container>
+              <Link
+                to="https://nocosharold.github.io/bootstrap-redesign/"
+                target="_blank"
+              >
+                <Container className="project project-solarView mb-5">
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                </Container>
+              </Link>
             </Col>
-            <Col className="col-12 col-md-12 col-lg-6">
+            <Col className="col-12 col-md-12 col-lg-6  px-0">
               <Col className="project-title col-12 d-flex justify-content-start">
                 <h5>Solar View Website Redesign</h5>
               </Col>
@@ -259,19 +295,38 @@ const IndexPage = ({ data }) => {
                   <span className="mr-3">Bootstrap 4.5</span>
                   <span className="mr-3">Slick Slider Carousel</span>
                 </div>
+                <div className="d-flex justify-content-start flex-wrap">
+                  <Link
+                    to="https://nocosharold.github.io/bootstrap-redesign/"
+                    target="_blank"
+                  >
+                    <VscLinkExternal className="project-links mr-3" />
+                  </Link>
+                  <Link
+                    to="https://github.com/supremeking23/solar-system-view-v2"
+                    target="_blank"
+                  >
+                    <FaGithub className="project-links" />
+                  </Link>
+                </div>
               </Col>
             </Col>
           </Row>
 
           <Row className="my-5">
             <Col className="col-12 col-md-12 col-lg-6">
-              <Container className="project mb-5">
-                <h4>Project</h4>
-                <h4>Project</h4>
-                <h4>Project</h4>
-              </Container>
+              <Link
+                to="https://nocosharold.github.io/landing-page-clone/"
+                target="_blank"
+              >
+                <Container className="project project-directlyClone mb-5">
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                  <h4>Project</h4>
+                </Container>
+              </Link>
             </Col>
-            <Col className="col-12 col-md-12 col-lg-6">
+            <Col className="col-12 col-md-12 col-lg-6  px-0">
               <Col className="project-title col-12 d-flex justify-content-end text-right">
                 <h5>Directly Landing Page Clone</h5>
               </Col>
@@ -285,6 +340,20 @@ const IndexPage = ({ data }) => {
                 <div className="d-flex justify-content-end flex-wrap mb-5">
                   <span className="ml-3">HTML</span>
                   <span className="ml-3">CSS</span>
+                </div>
+                <div className="d-flex justify-content-end flex-wrap">
+                  <Link
+                    to="https://nocosharold.github.io/landing-page-clone/"
+                    target="_blank"
+                  >
+                    <VscLinkExternal className="project-links" />
+                  </Link>
+                  <Link
+                    to="https://github.com/nocosharold/landing-page-clone"
+                    target="_blank"
+                  >
+                    <FaGithub className="project-links ml-3" />
+                  </Link>
                 </div>
               </Col>
             </Col>
@@ -375,9 +444,9 @@ const IndexPage = ({ data }) => {
                 </p>
               </Col>
               <Col>
-                <Container className="d-flex flex-column align-items-center align-items-sm-start">
+                <Container className="d-flex flex-column align-items-center align-items-sm-center">
                   <strong className="mb-2">Keep In Touch</strong>
-                  <Container className="d-flex p-0 justify-content-center justify-content-sm-start">
+                  <Container className="d-flex p-0 justify-content-center justify-content-sm-center">
                     <Link to="https://github.com/nocosharold" target="_blank">
                       <FaGithub className="footer-links mr-3 mb-2" />
                     </Link>
