@@ -27,10 +27,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Container fluid id="home">
         <Container>
-          <Row className="pt-5 mt-5">
-            <Col className=" col-12 col-lg-4">
-              <Container className="py-5 mb-5 d-flex justify-content-center align-items-center p-0">
-                <Img fixed={data.imageProfile.childImageSharp.fixed} />
+          <Row>
+            <Col className="my-5 col-12 col-lg-4 p-0">
+              <Container className="mt-5 d-flex justify-content-center align-items-center p-0">
+                <Img
+                  className="my-5"
+                  fixed={data.imageProfile.childImageSharp.fixed}
+                />
               </Container>
             </Col>
             <Col className="col-12 col-lg-8 d-flex justify-content-center align-items-center">
@@ -62,12 +65,12 @@ const IndexPage = ({ data }) => {
       <Container
         id="about"
         fluid
-        className="bg-dark py-5 d-flex align-items-center"
+        className="bg-dark my-5 d-flex align-items-center"
       >
-        <Container className="pt-5 ">
-          <Row className="pt-5">
-            <Col className="d-flex align-items-center flex-column">
-              <h3>About</h3>
+        <Container className="mb-5">
+          <Row className="mb-5">
+            <Col className="d-flex align-items-center flex-column my-5">
+              <h3 className="my-5">About</h3>
               <p className="text-center w-75 mt-5">
                 My goal is to have more substantial knowledge concerning
                 programming languages, especially in web development. After
@@ -162,209 +165,215 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container id="projects" fluid className="pt-5 mt-5">
-        <Container className="pt-5">
-          <h3 className="text-center my-5">Projects</h3>
-
-          <Row className="d-flex flex-row-reverse my-5">
-            <Col className="col-12 col-md-12 col-lg-6">
-              <Link to="https://iko-mern.herokuapp.com/" target="_blank">
-                <Container className="project project-iko mb-5">
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                </Container>
-              </Link>
-            </Col>
-            <Col className="col-12 col-md-12 col-lg-6 px-0">
-              <Col className="project-title col-12 d-flex justify-content-start">
-                <h5>Iko Website</h5>
-              </Col>
-              <Col className="col-12">
-                <Container className="px-0">
-                  <p className="text-left">
-                    IKO is a great way to find the best vacation spots and
-                    resorts in the Philippines through shared vacation and
-                    lodging experiences.
-                  </p>
-                </Container>
-                <div className="d-flex justify-content-start flex-wrap mb-5">
-                  <span className="mr-3">Mongo DB</span>
-                  <span className="mr-3">Express JS</span>
-                  <span className="mr-3">React JS</span>
-                  <span className="mr-3">Node JS</span>
-                  <span className="mr-3">Redux</span>
-                </div>
-                <div className="d-flex justify-content-start flex-wrap">
+      <Container id="projects" fluid className="my-5">
+        <Container className="my-5">
+          <Row className="mt-5">
+            <Col className="d-flex flex-column my-5">
+              <h3 className="my-5">Projects</h3>
+              <Row className="d-flex flex-row-reverse mt-5">
+                <Col className="col-12 col-md-12 col-lg-6">
                   <Link to="https://iko-mern.herokuapp.com/" target="_blank">
-                    <VscLinkExternal className="project-links mr-3" />
+                    <Container className="project project-iko mb-5">
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                    </Container>
                   </Link>
-                  <Link
-                    to="https://github.com/chingu-voyages/vk1-bears-team-06.git"
-                    target="_blank"
-                  >
-                    <FaGithub className="project-links" />
-                  </Link>
-                </div>
-              </Col>
-            </Col>
-          </Row>
+                </Col>
+                <Col className="col-12 col-md-12 col-lg-6 px-0">
+                  <Col className="project-title col-12 d-flex justify-content-start">
+                    <h5>Iko Website</h5>
+                  </Col>
+                  <Col className="col-12">
+                    <Container className="px-0">
+                      <p className="text-left">
+                        IKO is a great way to find the best vacation spots and
+                        resorts in the Philippines through shared vacation and
+                        lodging experiences.
+                      </p>
+                    </Container>
+                    <div className="d-flex justify-content-start flex-wrap mb-5">
+                      <span className="mr-3">Mongo DB</span>
+                      <span className="mr-3">Express JS</span>
+                      <span className="mr-3">React JS</span>
+                      <span className="mr-3">Node JS</span>
+                      <span className="mr-3">Redux</span>
+                    </div>
+                    <div className="d-flex justify-content-start flex-wrap">
+                      <Link
+                        to="https://iko-mern.herokuapp.com/"
+                        target="_blank"
+                      >
+                        <VscLinkExternal className="project-links mr-3" />
+                      </Link>
+                      <Link
+                        to="https://github.com/chingu-voyages/vk1-bears-team-06.git"
+                        target="_blank"
+                      >
+                        <FaGithub className="project-links" />
+                      </Link>
+                    </div>
+                  </Col>
+                </Col>
+              </Row>
 
-          <Row className="my-5">
-            <Col className="col-12 col-md-12 col-lg-6">
-              <Link
-                to="https://nocosharold.github.io/pokemon-lite-js/"
-                target="_blank"
-              >
-                <Container className="project project-pokeLite mb-5">
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                </Container>
-              </Link>
-            </Col>
-            <Col className="col-12 col-md-12 col-lg-6  px-0">
-              <Col className="project-title col-12 d-flex justify-content-end text-right">
-                <h5>Pokemon Lite</h5>
-              </Col>
-              <Col className="col-12">
-                <Container className="px-0">
-                  <p className="text-right">
-                    Pokemon Lite is a web application that will let the user
-                    view all pokemon and its characteristics. There is also a
-                    feature that the pokemon catcher/user will have access to
-                    catch different types of pokemon.
-                  </p>
-                </Container>
-                <div className="d-flex justify-content-end flex-wrap mb-5">
-                  <span className="ml-3">HTML</span>
-                  <span className="ml-3">CSS</span>
-                  <span className="ml-3">JS</span>
-                  <span className="ml-3">Bootstrap 4.5</span>
-                  <span className="ml-3">Poke API</span>
-                </div>
-                <div className="d-flex justify-content-end flex-wrap">
+              <Row className="my-5">
+                <Col className="col-12 col-md-12 col-lg-6">
                   <Link
                     to="https://nocosharold.github.io/pokemon-lite-js/"
                     target="_blank"
                   >
-                    <VscLinkExternal className="project-links" />
+                    <Container className="project project-pokeLite mb-5">
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                    </Container>
                   </Link>
-                  <Link
-                    to="https://github.com/supremeking23/pokemon-lite-js"
-                    target="_blank"
-                  >
-                    <FaGithub className="project-links ml-3" />
-                  </Link>
-                </div>
-              </Col>
-            </Col>
-          </Row>
+                </Col>
+                <Col className="col-12 col-md-12 col-lg-6  px-0">
+                  <Col className="project-title col-12 d-flex justify-content-end text-right">
+                    <h5>Pokemon Lite</h5>
+                  </Col>
+                  <Col className="col-12">
+                    <Container className="px-0">
+                      <p className="text-right">
+                        Pokemon Lite is a web application that will let the user
+                        view all pokemon and its characteristics. There is also
+                        a feature that the pokemon catcher/user will have access
+                        to catch different types of pokemon.
+                      </p>
+                    </Container>
+                    <div className="d-flex justify-content-end flex-wrap mb-5">
+                      <span className="ml-3">HTML</span>
+                      <span className="ml-3">CSS</span>
+                      <span className="ml-3">JS</span>
+                      <span className="ml-3">Bootstrap 4.5</span>
+                      <span className="ml-3">Poke API</span>
+                    </div>
+                    <div className="d-flex justify-content-end flex-wrap">
+                      <Link
+                        to="https://nocosharold.github.io/pokemon-lite-js/"
+                        target="_blank"
+                      >
+                        <VscLinkExternal className="project-links" />
+                      </Link>
+                      <Link
+                        to="https://github.com/supremeking23/pokemon-lite-js"
+                        target="_blank"
+                      >
+                        <FaGithub className="project-links ml-3" />
+                      </Link>
+                    </div>
+                  </Col>
+                </Col>
+              </Row>
 
-          <Row className="d-flex flex-row-reverse my-5">
-            <Col className="col-12 col-md-12 col-lg-6">
-              <Link
-                to="https://nocosharold.github.io/bootstrap-redesign/"
-                target="_blank"
-              >
-                <Container className="project project-solarView mb-5">
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                </Container>
-              </Link>
-            </Col>
-            <Col className="col-12 col-md-12 col-lg-6  px-0">
-              <Col className="project-title col-12 d-flex justify-content-start">
-                <h5>Solar View Website Redesign</h5>
-              </Col>
-              <Col className="col-12">
-                <Container className="px-0">
-                  <p className="text-left">
-                    Solar System View is a website that will allow users to
-                    explore the planets and other celestial body in the solar
-                    system. Views of the Solar System gives everyone's
-                    exploration and educational enjoyment of the solar system
-                    and beyond.
-                  </p>
-                </Container>
-                <div className="d-flex justify-content-start flex-wrap mb-5">
-                  <span className="mr-3">HTML</span>
-                  <span className="mr-3">CSS</span>
-                  <span className="mr-3">JavaScript</span>
-                  <span className="mr-3">Bootstrap 4.5</span>
-                  <span className="mr-3">Slick Slider Carousel</span>
-                </div>
-                <div className="d-flex justify-content-start flex-wrap">
+              <Row className="d-flex flex-row-reverse my-5">
+                <Col className="col-12 col-md-12 col-lg-6">
                   <Link
                     to="https://nocosharold.github.io/bootstrap-redesign/"
                     target="_blank"
                   >
-                    <VscLinkExternal className="project-links mr-3" />
+                    <Container className="project project-solarView mb-5">
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                    </Container>
                   </Link>
-                  <Link
-                    to="https://github.com/supremeking23/solar-system-view-v2"
-                    target="_blank"
-                  >
-                    <FaGithub className="project-links" />
-                  </Link>
-                </div>
-              </Col>
-            </Col>
-          </Row>
+                </Col>
+                <Col className="col-12 col-md-12 col-lg-6  px-0">
+                  <Col className="project-title col-12 d-flex justify-content-start">
+                    <h5>Solar View Website Redesign</h5>
+                  </Col>
+                  <Col className="col-12">
+                    <Container className="px-0">
+                      <p className="text-left">
+                        Solar System View is a website that will allow users to
+                        explore the planets and other celestial body in the
+                        solar system. Views of the Solar System gives everyone's
+                        exploration and educational enjoyment of the solar
+                        system and beyond.
+                      </p>
+                    </Container>
+                    <div className="d-flex justify-content-start flex-wrap mb-5">
+                      <span className="mr-3">HTML</span>
+                      <span className="mr-3">CSS</span>
+                      <span className="mr-3">JavaScript</span>
+                      <span className="mr-3">Bootstrap 4.5</span>
+                      <span className="mr-3">Slick Slider Carousel</span>
+                    </div>
+                    <div className="d-flex justify-content-start flex-wrap">
+                      <Link
+                        to="https://nocosharold.github.io/bootstrap-redesign/"
+                        target="_blank"
+                      >
+                        <VscLinkExternal className="project-links mr-3" />
+                      </Link>
+                      <Link
+                        to="https://github.com/supremeking23/solar-system-view-v2"
+                        target="_blank"
+                      >
+                        <FaGithub className="project-links" />
+                      </Link>
+                    </div>
+                  </Col>
+                </Col>
+              </Row>
 
-          <Row className="my-5">
-            <Col className="col-12 col-md-12 col-lg-6">
-              <Link
-                to="https://nocosharold.github.io/landing-page-clone/"
-                target="_blank"
-              >
-                <Container className="project project-directlyClone mb-5">
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                  <h4>Project</h4>
-                </Container>
-              </Link>
-            </Col>
-            <Col className="col-12 col-md-12 col-lg-6  px-0">
-              <Col className="project-title col-12 d-flex justify-content-end text-right">
-                <h5>Directly Landing Page Clone</h5>
-              </Col>
-              <Col className="col-12">
-                <Container className="px-0">
-                  <p className="text-right">
-                    It is a great challenge to make the page responsive without
-                    using any frameworks.
-                  </p>
-                </Container>
-                <div className="d-flex justify-content-end flex-wrap mb-5">
-                  <span className="ml-3">HTML</span>
-                  <span className="ml-3">CSS</span>
-                </div>
-                <div className="d-flex justify-content-end flex-wrap">
+              <Row className="my-5">
+                <Col className="col-12 col-md-12 col-lg-6">
                   <Link
                     to="https://nocosharold.github.io/landing-page-clone/"
                     target="_blank"
                   >
-                    <VscLinkExternal className="project-links" />
+                    <Container className="project project-directlyClone mb-5">
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                      <h4>Project</h4>
+                    </Container>
                   </Link>
-                  <Link
-                    to="https://github.com/nocosharold/landing-page-clone"
-                    target="_blank"
-                  >
-                    <FaGithub className="project-links ml-3" />
-                  </Link>
-                </div>
-              </Col>
+                </Col>
+                <Col className="col-12 col-md-12 col-lg-6  px-0">
+                  <Col className="project-title col-12 d-flex justify-content-end text-right">
+                    <h5>Directly Landing Page Clone</h5>
+                  </Col>
+                  <Col className="col-12">
+                    <Container className="px-0">
+                      <p className="text-right">
+                        It is a great challenge to make the page responsive
+                        without using any frameworks.
+                      </p>
+                    </Container>
+                    <div className="d-flex justify-content-end flex-wrap mb-5">
+                      <span className="ml-3">HTML</span>
+                      <span className="ml-3">CSS</span>
+                    </div>
+                    <div className="d-flex justify-content-end flex-wrap">
+                      <Link
+                        to="https://nocosharold.github.io/landing-page-clone/"
+                        target="_blank"
+                      >
+                        <VscLinkExternal className="project-links" />
+                      </Link>
+                      <Link
+                        to="https://github.com/nocosharold/landing-page-clone"
+                        target="_blank"
+                      >
+                        <FaGithub className="project-links ml-3" />
+                      </Link>
+                    </div>
+                  </Col>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
       </Container>
 
-      <Container id="contact" fluid className="bg-dark pt-5">
+      <Container id="contact" fluid className="bg-dark mt-5">
         <Container>
-          <Row className="py-5">
-            <Col className="d-flex flex-column align-items-center">
+          <Row className="my-5">
+            <Col className="d-flex flex-column align-items-center my-5">
               <h3 className="my-5">Contact Me</h3>
               <h4 className="text-center">Lets Code!</h4>
               <p className="text-center w-50 mb-4">
