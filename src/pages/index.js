@@ -68,8 +68,8 @@ const IndexPage = ({ data }) => {
         className="bg-dark my-5 d-flex align-items-center"
       >
         <Container className="mb-5">
-          <Row className="mb-5">
-            <Col className="d-flex align-items-center flex-column my-5">
+          <Row>
+            <Col className="d-flex align-items-center flex-column mt-5">
               <h3 className="my-5">About</h3>
               <p className="text-center w-75 mt-5">
                 My goal is to have more substantial knowledge concerning
