@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Harold Nocos Portfolio logo" src="https://ik.imagekit.io/1cqtok8fv7n/favicon_KuxnNQKWAw7.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
