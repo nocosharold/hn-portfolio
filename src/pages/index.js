@@ -26,18 +26,18 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Container fluid id="home">
-        <Container>
+        <Container className="hero mt-5 py-5">
           <Row>
-            <Col className="my-5 col-12 col-lg-4 p-0">
+            <Col className="mt-5 col-12 col-lg-4 p-0">
               <Container className="mt-5 d-flex justify-content-center align-items-center p-0">
                 <Img
-                  className="my-5"
+                  className="my-5 rounded-circle"
                   fixed={data.imageProfile.childImageSharp.fixed}
                 />
               </Container>
             </Col>
-            <Col className="col-12 col-lg-8 d-flex justify-content-center align-items-center">
-              <Container className="bg-trasparent p-0 pb-5 mb-5">
+            <Col className="mt-5 pt-5 ml-3 col-12 col-lg-7 d-flex justify-content-center align-items-center">
+              <Container className="bg-trasparent p-0">
                 <span>Hey, my name is</span>
                 <h1>
                   Harold Nocos <br />
@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
                   everyone's design perspective.
                 </p>
                 <Button
-                  className="my-5"
+                  className="mt-5"
                   variant="outline-warning"
                   href="https://my.indeed.com/p/haroldn-rf8089m"
                   target="_blank"
@@ -485,7 +485,7 @@ export const data = graphql`
   query Images {
     imageProfile: file(relativePath: { eq: "harold.jpg" }) {
       childImageSharp {
-        fixed(width: 300, height: 600) {
+        fixed(width: 320, height: 320) {
           ...GatsbyImageSharpFixed
         }
       }

@@ -10,7 +10,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const Header = () => {
   return (
-    <Container fluid className="bg-black shadow p-0 py-3 fixed-top">
+    <Container fluid className="bg-black shadow p-0 py-3 mb-5 fixed-top">
       <Container className="bg-black p-0">
         <Navbar expand="lg" variant="dark" className="p-0 px-3">
           <Navbar.Brand>
